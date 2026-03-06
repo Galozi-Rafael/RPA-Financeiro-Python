@@ -1,11 +1,13 @@
-from automation.gnucash_app import GnuCashApp
+from apps.gnucash.gnucash_app import GnuCashApp
 
 def main():
     app_path = r"C:\Program Files (x86)\gnucash\bin\gnucash.exe"
 
     gnucash_app = GnuCashApp(app_path)
 
-    gnucash_app.start_app()
+    gnucash_app.start_gnucash()
+
+    gnucash_app.map_interface()
 
     input("Pressione ENTER para finalizar...")
 
