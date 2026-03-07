@@ -8,7 +8,7 @@ class CurrencyDialog:
     def wait(self):
         self.window.wait("visible", timeout=20)
 
-    def select_and_confirm(self, currency):
+    def select_and_confirm_currency(self, currency):
 
         self.wait()
 
