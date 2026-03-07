@@ -11,6 +11,6 @@ class AppManager:
     def start_app(self, app_path):
         self.app = Application(backend=self.backend).start(app_path)
 
-        time.sleep(5)  
+        time.sleep(2)  
 
         return self.app

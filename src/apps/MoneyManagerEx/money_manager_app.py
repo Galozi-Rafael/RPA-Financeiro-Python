@@ -1,4 +1,5 @@
 from desktop_automation.core.app_manager import AppManager
+from desktop_automation.controls.save_dialog import SaveDialog
 
 # MoneyManagerApp é uma classe que encapsula a automação do aplicativo Money Manager Ex usando a biblioteca pywinauto.
 class MoneyManagerApp:
@@ -25,3 +26,12 @@ class MoneyManagerApp:
         self.window.child_window(
             auto_id="5002",
             control_type="Button").click_input()
+        
+    def create_database(self, db_name):
+
+        self.click_new_file()
+
+        print("Criando nova base de dados...")
+
+        save_dialog = SaveDialog()
+        save_dialog.save(db_name)
