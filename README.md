@@ -10,4 +10,10 @@ E usando o Inspect.exe para localizar os elementos na aplicação.
 
 ## Estágio
 
-Por hora o bot somente inicia o Money Manager Ex.
+- A automação consegue abrir o aplicativo;
+- Seguir as instruções para criar um novo arquivo de dados;
+- Configurar o novo arquivo de dados com:
+    - Nome;
+    - Moeda;
+    - Conta.
+- Deixando assim o ambiente pronto para trabalhar lançamentos.
