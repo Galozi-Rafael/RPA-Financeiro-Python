@@ -1,17 +1,11 @@
-from desktop_automation.core.app_manager import AppManager
-from desktop_automation.controls.save_dialog import SaveDialog
 from desktop_automation.controls.setup_wizard import SetupWizard
 from desktop_automation.controls.currency_dialog import CurrencyDialog
-from apps.MoneyManagerEx.money_manager_app import MoneyManagerApp
-
-from pywinauto import Desktop
 
 class NewDatabase:
     def __init__(self, window):
         self.window = window
         self.setup_wizard = SetupWizard(self.window)
         self.currency_dialog = CurrencyDialog(self.window)
-        self.app_manager = AppManager()
         
 
     def complete_setup(self, username, currency="USD", accountname="Conta Principal"):

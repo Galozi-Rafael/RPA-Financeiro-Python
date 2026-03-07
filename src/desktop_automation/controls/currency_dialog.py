@@ -1,5 +1,3 @@
-from pywinauto import Desktop
-
 class CurrencyDialog:
 
     def __init__(self, window):
