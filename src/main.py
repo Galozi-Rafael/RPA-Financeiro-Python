@@ -8,7 +8,7 @@ def main():
 
     money_manager_app.start_money_manager()
 
-    money_manager_app.create_database("Teste_MMEX")
+    money_manager_app.create_database("MinhaNovaBase")
 
     new_database = NewDatabase(money_manager_app.window)
 

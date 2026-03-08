@@ -9,7 +9,7 @@ class MoneyManagerApp:
         self.app = None
         self.window = None
 
-    # O método start_app inicia o aplicativo GnuCash e aguarda até que a janela principal esteja visível.
+    # O método start_app inicia o aplicativo Money Manager Ex e aguarda até que a janela principal esteja visível.
     def start_money_manager(self):
         self.app = self.app_manager.start_app(self.app_path)
         self.window = self.app.window(title_re=".*Money Manager Ex.*")
@@ -27,7 +27,7 @@ class MoneyManagerApp:
             auto_id="5002",
             control_type="Button").click_input()
         
-    def create_database(self, db_name):
+    def create_database (self, db_name):
 
         self.click_new_file()
 
@@ -35,3 +35,5 @@ class MoneyManagerApp:
 
         save_dialog = SaveDialog()
         save_dialog.save(db_name)
+        
+    

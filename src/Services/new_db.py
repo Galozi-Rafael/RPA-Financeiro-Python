@@ -1,3 +1,4 @@
+from desktop_automation.controls.save_dialog import SaveDialog
 from desktop_automation.controls.setup_wizard import SetupWizard
 from desktop_automation.controls.currency_dialog import CurrencyDialog
 
@@ -6,7 +7,7 @@ class NewDatabase:
         self.window = window
         self.setup_wizard = SetupWizard(self.window)
         self.currency_dialog = CurrencyDialog(self.window)
-        
+                
 
     def complete_setup(self, username, currency="USD", accountname="Conta Principal"):
         self.setup_wizard.click_next()
